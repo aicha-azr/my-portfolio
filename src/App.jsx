@@ -2,18 +2,23 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Home from './components/Home';
+import SideBar from './components/SideBar';
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <Router>
-      <Switch>
-        {/*<Route exact path="/" component={Home} />*/}
-        
-      </Switch>
-    </Router>
+    <> 
+    <div className=''>
+    <aside className='fixed top-0 left-0'>
+
+    <SideBar/>
+    </aside>
+   <main className=''>
+    <Home/>
+   </main>
+    </div>
+ 
     </>
   )
 }
