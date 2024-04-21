@@ -5,6 +5,7 @@ import './App.css'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './components/Home';
 import SideBar from './components/SideBar';
+import Education from './components/Education';
 function App() {
 
   return (
@@ -16,6 +17,7 @@ function App() {
     </aside>
    <main className=''>
     <Home/>
+    <Education/>
    </main>
     </div>
  
