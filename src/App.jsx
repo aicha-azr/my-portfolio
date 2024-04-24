@@ -6,18 +6,19 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './components/Home';
 import SideBar from './components/SideBar';
 import Education from './components/Education';
+import Skills from './components/Skills';
 function App() {
 
   return (
     <> 
-    <div className=''>
-    <aside className='fixed top-0 left-0'>
+    <div className=' flex justify-center'>
 
     <SideBar/>
-    </aside>
+
    <main className=''>
-    <Home/>
+  
     <Education/>
+    <Skills/>
    </main>
     </div>
  

@@ -13,16 +13,15 @@ const Home = ()=>{
           });
       });
     return (<>
-<div className="flex flex-col justify-center items-center min-h-screen" id="home">
-  <div className="mx-auto text-center">
+<div className="flex flex-col justify-center items-center mt-4  gap-3 " id="home">
+    <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black  font-bold text-center">Welcome to my Portfolio</h1>
+  <div className="mx-auto text-center flex gap-5">
     <div>
-      <img src={picture} alt="my_picture" className="mx-auto h-40 w-40 md:h-60 md:w-60 lg:h-80 lg:w-80 overflow-hidden rounded-full cover " />
-    </div>
-    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-black">
+    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold ">
       <span className="text-transparent bg-clip-text bg-gradient-to-tr from-[#FF8660] to-[#8000FF]">Aicha Azeroual</span><br />
       Développeuse full-stack
     </h1>
-    <p className="mx-auto mt-8 mb-12 text-lg md:text-xl lg:text-2xl font-light text-black max-w-lg">
+    <p className="mx-auto mt-8 mb-12 text-lg md:text-xl lg:text-xl font-light  max-w-lg border border-gray shadow shadow-md rounded rounded-md bg-slate-100 p-5">
       Développeuse full-stack expérimentée, je conjugue expertise technique et sens de l'innovation pour concevoir des solutions web sur mesure. Passionnée par la résolution de défis complexes, mon approche allie performance et créativité, visant à maximiser l'impact des projets.
     </p>
     <div className="flex flex-col md:flex-row justify-center">
@@ -33,6 +32,10 @@ const Home = ()=>{
         <a href={Cv} className="text-[#FF8660]" download> Download CV</a>
       </button>
     </div>
+    </div> 
+   {/* <div>
+      <img src={picture} alt="my_picture" className="mx-auto h-40 w-40 md:h-60 md:w-60 lg:h-80 lg:w-80 overflow-hidden rounded-full cover shadow shadow-md shadow-[#9CA5C2] " />
+    </div>*/}
   </div>
 </div>
 

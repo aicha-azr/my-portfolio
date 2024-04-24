@@ -59,7 +59,7 @@ const Education = () => {
             </h2>
             <p className="sm:mt-1 block text-sm sm:text-base font-bold">
               {" "}
-              Deliver Licence en Sciences Mathématiques Informatiques à
+              Licence en Sciences Mathématiques Informatiques à
               l'Universite Hassan 2
             </p>
           </div>
@@ -89,7 +89,7 @@ const Education = () => {
             </h2>
             <p className="sm:mt-1 block text-sm sm:text-base font-bold ">
               {" "}
-              accalauréat en sciences Mathématiques (B) à Lycée technique Anwal
+              Baccalauréat en sciences Mathématiques (B) à Lycée technique Anwal
             </p>
           </div>
         </div>
