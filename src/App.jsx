@@ -16,8 +16,8 @@ function App() {
     <SideBar/>
 
    <main className=''>
-  
-    <Education/>
+  <Home/>
+    <Education />
     <Skills/>
    </main>
     </div>

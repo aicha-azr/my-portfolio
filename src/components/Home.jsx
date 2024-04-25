@@ -3,6 +3,10 @@ import Cv from '../assets/aicha_azeroual.pdf';
 import AOS from "aos";
 import { useEffect } from "react";
 import 'aos/dist/aos.css';
+import technologies from "../db/tech";
+import { ArrowDownToDot, CodeXml } from "lucide-react";
+import 'tailwindcss/tailwind.css';
+import me from '../assets/real_aicha.png'
 const Home = ()=>{
     useEffect(() => {
         console.log("AOS initializing...");
@@ -13,31 +17,38 @@ const Home = ()=>{
           });
       });
     return (<>
-<div className="flex flex-col justify-center items-center mt-4  gap-3 " id="home">
-    <h1 className="animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-black  font-bold text-center">Welcome to my Portfolio</h1>
-  <div className="mx-auto text-center flex gap-5">
-    <div>
-    <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold ">
-      <span className="text-transparent bg-clip-text bg-gradient-to-tr from-[#FF8660] to-[#8000FF]">Aicha Azeroual</span><br />
-      Développeuse full-stack
-    </h1>
-    <p className="mx-auto mt-8 mb-12 text-lg md:text-xl lg:text-xl font-light  max-w-lg border border-gray shadow shadow-md rounded rounded-md bg-slate-100 p-5">
-      Développeuse full-stack expérimentée, je conjugue expertise technique et sens de l'innovation pour concevoir des solutions web sur mesure. Passionnée par la résolution de défis complexes, mon approche allie performance et créativité, visant à maximiser l'impact des projets.
-    </p>
-    <div className="flex flex-col md:flex-row justify-center">
-      <button className="mb-4 md:mb-0 mr-0 md:mr-4 text-gray-800 px-6 py-3 md:px-8 md:py-4 bg-white rounded-full border border-[#FF5FA5] font-semibold text-lg md:text-xl" data-aos="zoom-in-up">
-        <a href="#contact" className="text-[#FF8660]">Contactez-moi</a>
-      </button>
-      <button className="text-white px-6 py-3 md:px-8 md:py-4 bg-transparent border-2 rounded-full font-semibold text-lg md:text-xl border-[#FF5FA5]" data-aos="zoom-in-up">
-        <a href={Cv} className="text-[#FF8660]" download> Download CV</a>
-      </button>
-    </div>
-    </div> 
-   {/* <div>
-      <img src={picture} alt="my_picture" className="mx-auto h-40 w-40 md:h-60 md:w-60 lg:h-80 lg:w-80 overflow-hidden rounded-full cover shadow shadow-md shadow-[#9CA5C2] " />
-    </div>*/}
-  </div>
+<section className="">
+    <div className="flex items-center justify-around min-h-screen  mx-auto lg:gap-8 xl:gap-0  lg:grid-cols-12">
+        <div className="gap-5 lg:col-span-7 flex flex-col items-center text-center mt-2">
+            <h1 className="max-w-xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-BRoyal " data-aos="fade-right">
+                Hi, I'm <span className="text-transparent bg-clip-text bg-gradient-to-tr from-[#FF8660] to-[#8000FF]">Aicha</span>,
+            </h1>
+            <h2 className="max-w-xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-5xl text-b1 " data-aos="fade-left">Full Stack </h2>
+            <CodeXml size={40} data-aos="fade-up" color="#1e0f75" />
+            <h2 className="max-w-xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-5xl text-b1" data-aos="fade-left"> MERN Stack Developer</h2>
+            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl text-black" data-aos="fade-up">
+                Welcome to My World of Technology!<br/>Where Passion Meets Innovation
+            </p>
+           {/* <div className="flex justify-center mb-4 overflow-hidden animate-marquee ">
+                {technologies.map( item => (
+                    <img  src={item} alt="tech" className="rounded-md shadow w-10 h-10 mx-2 transition-transform duration-2000 transform translate-x-full delay-1000" />
+                ))}
+              </div>*/}
+            <div className="flex ">
+          
+            <a href="#education" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-BRoyal border border-gray-300 rounded-lg hover:bg-b4 focus:ring-4 focus:ring-gray-100  animate-bounce focus:animate-none hover:animate-none shadow shadow-BRoyal">
+                scroll down <ArrowDownToDot />
+            </a>
+             </div>
+        </div>
+        <div className="flex justify-center items-center bg-violet  rounded-full hidden md:block" data-aos="fade-up">
+    <img src={me} alt="aicha" className="mx-auto  rounded-b-full " width={350} height={350}/>  
 </div>
+           
+    </div>
+</section>
+
+
 
     </>)
 }

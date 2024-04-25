@@ -7,6 +7,15 @@ export default {
   ],
   theme: {
     extend: {
+      animation: {
+        'marquee': 'marquee 10s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
       colors:{
         "BRoyal": "#1e0f75",
         "b1": "#1c1dab",
@@ -24,5 +33,13 @@ export default {
       'greatVibes': ['Great Vibes', 'cursive'],
     },
   },
-  plugins: [],
+  variants: {
+    // Other variants...
+    extend: {
+      animation: ['hover', 'focus'],
+    },
+  },
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
