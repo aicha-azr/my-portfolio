@@ -51,7 +51,7 @@ const SideBar = () => {
         </li>
         <li>
           <a
-            href="#"
+            href="#about"
             className="block py-2 pr-4 pl-3 text-[#1e0f75] border-b border-gray-100 hover:bg-v2 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2"
           >
             About

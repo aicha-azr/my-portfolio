@@ -29,14 +29,10 @@ const Home = ()=>{
             <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl text-black" data-aos="fade-up">
                 Welcome to My World of Technology!<br/>Where Passion Meets Innovation
             </p>
-           {/* <div className="flex justify-center mb-4 overflow-hidden animate-marquee ">
-                {technologies.map( item => (
-                    <img  src={item} alt="tech" className="rounded-md shadow w-10 h-10 mx-2 transition-transform duration-2000 transform translate-x-full delay-1000" />
-                ))}
-              </div>*/}
+          
             <div className="flex ">
           
-            <a href="#education" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-BRoyal border border-gray-300 rounded-lg hover:bg-b4 focus:ring-4 focus:ring-gray-100  animate-bounce focus:animate-none hover:animate-none shadow shadow-BRoyal">
+            <a href="#about" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-BRoyal border border-gray-300 rounded-lg hover:bg-b4 focus:ring-4 focus:ring-gray-100  animate-bounce focus:animate-none hover:animate-none shadow shadow-BRoyal">
                 scroll down <ArrowDownToDot />
             </a>
              </div>
