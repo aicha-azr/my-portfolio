@@ -26,7 +26,7 @@ const Home = ()=>{
             <h2 className="max-w-xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-5xl text-b1 " data-aos="fade-left">Full Stack </h2>
             <CodeXml size={40} data-aos="fade-up" color="#1e0f75" />
             <h2 className="max-w-xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-5xl text-b1" data-aos="fade-left"> MERN Stack Developer</h2>
-            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl text-black" data-aos="fade-up">
+            <p className="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-lg lg:text-xl text-black" data-aos="fade-up">
                 Welcome to My World of Technology!<br/>Where Passion Meets Innovation
             </p>
           

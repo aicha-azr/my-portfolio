@@ -8,6 +8,7 @@ import SideBar from './components/SideBar';
 import Education from './components/Education';
 import Skills from './components/Skills';
 import About from './components/About';
+import Projects from './components/Projects';
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
    <main className=''>
   <Home/>
   <About/>
+  <Projects/>
    </main>
     </div>
  
