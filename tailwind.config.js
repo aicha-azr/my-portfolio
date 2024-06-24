@@ -26,6 +26,9 @@ module.exports = withMT({
         "v1":"#e893c5",
         "v2":"#ebb2c3",
         "b4":"#cbd8e8",
+        "bleuGreen": "#287094",
+        "beige": "#d4d4ce",
+        "green": "#023246",
       }
     },
     fontFamily: {

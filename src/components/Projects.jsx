@@ -17,7 +17,7 @@ const Projects = () => {
     
     return (
         <>
-            <section className="py-12 flex flex-col items-center gap-16 mt-10" id="projects">
+            <section className="py-12 flex flex-col  gap-16 mt-10" id="projects">
             
             <h2 className="max-w-xl mb-4 text-3xl font-extrabold tracking-tight md:self-start md:w-1/2 leading-none md:text-4xl xl:text-5xl text-b1" data-aos="fade-right">Projects</h2>  
             <CarouselCustomNavigation/>

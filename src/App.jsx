@@ -5,24 +5,21 @@ import './App.css'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './components/Home';
 import SideBar from './components/SideBar';
-import Education from './components/Education';
-import Skills from './components/Skills';
 import About from './components/About';
 import Projects from './components/Projects';
 function App() {
 
   return (
     <> 
-    <div className=' flex justify-center'>
-
+  
+   <main className='fixed w-full max-w-fit h-[100vh] border border-black left-0 right-0 top-0 overflow-y-auto scroll-smooth px-2 '>
     <SideBar/>
 
-   <main className=''>
   <Home/>
   <About/>
   <Projects/>
    </main>
-    </div>
+   
  
     </>
   )

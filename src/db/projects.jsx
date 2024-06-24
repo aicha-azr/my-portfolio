@@ -20,7 +20,7 @@ const projects = [
     {
         image:"https://maghreb.simplonline.co/_next/image?url=https%3A%2F%2Fsimplonline-v3-prod.s3.eu-west-3.amazonaws.com%2Fmedia%2Fimage%2Fjpg%2Fbest-recipes-blogimage-v3-65968aa8d98a7659538858.jpg&w=1280&q=75",
         link:"https://github.com/aicha-azr/Authentifier-_Recipe_API.git",
-        title:"Recipe APIs: Creating an Online Recipe API with ExpressJS and MongoDB in English translation"
+        title:"Recipe APIs"
     },
     {
         image:"https://maghreb.simplonline.co/_next/image?url=https%3A%2F%2Fsimplonline-v3-prod.s3.eu-west-3.amazonaws.com%2Fmedia%2Fimage%2Fjpg%2Fr-65a525af8532a451645825.jpg&w=1280&q=75",
