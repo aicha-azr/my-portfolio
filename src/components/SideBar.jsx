@@ -7,7 +7,7 @@ const SideBar = () => {
   return (
     <>
     
-<nav className="bg-opacity-50 bg-white-200 backdrop-blur-sm  px-2 sm:px-4 py-2.5 rounded shadow sticky top-0 w-full z-10 rounded  ">
+<nav className="bg-opacity-50 bg-beige backdrop-blur-sm lg:rounded-full top-2  px-2 sm:px-4 py-2.5 rounded shadow sticky top-0 w-full z-10 rounded  ">
   <div className="container flex flex-wrap justify-between items-center mx-auto">
     <a href="/" className="flex items-center">
       <span className="font-greatVibes self-center text-xl font-semibold font-lugrasimo whitespace-nowrap text-[#1c1dab]">
