@@ -9,13 +9,31 @@ module.exports = withMT({
   theme: {
     extend: {
       animation: {
-        'marquee': 'marquee 10s linear infinite',
+        marquee: 'marquee 10s linear infinite',
+        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
+       
       },
       keyframes: {
         marquee: {
           '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(-100%)' },
         },
+        typing: {
+          "0%": {
+            width: "0%",
+            visibility: "hidden"
+          },
+          "100%": {
+            width: "100%"
+          }
+        }, blink: {
+          "50%": {
+            borderColor: "transparent"
+          },
+          "100%": {
+            borderColor: "white"
+          }
+        }
       },
       colors:{
         "BRoyal": "#1e0f75",
@@ -26,9 +44,10 @@ module.exports = withMT({
         "v1":"#e893c5",
         "v2":"#ebb2c3",
         "b4":"#cbd8e8",
-        "bleuGreen": "#287094",
-        "beige": "#d4d4ce",
+        "bleuGreen": "#506c8a",
+        "beige": "#f0dab6",
         "green": "#023246",
+
       }
     },
     fontFamily: {
