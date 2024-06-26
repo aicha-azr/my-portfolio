@@ -9,14 +9,18 @@ module.exports = withMT({
   theme: {
     extend: {
       animation: {
-        marquee: 'marquee 10s linear infinite',
-        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite"
-       
+        marquee: 'marquee 20s ease-in-out infinite',
+        typing: "typing 2s steps(20) infinite alternate, blink .7s infinite",
+        moveY: 'marquee 20s ease-in-out  infinite',
       },
       keyframes: {
         marquee: {
-          '0%': { transform: 'translateX(100%)' },
-          '100%': { transform: 'translateX(-100%)' },
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(30vw)' },
+        },
+        moveY:{
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(100vh)' },
         },
         typing: {
           "0%": {
@@ -47,6 +51,9 @@ module.exports = withMT({
         "bleuGreen": "#506c8a",
         "beige": "#f0dab6",
         "green": "#023246",
+        "pink": "#ecc2bd",
+        "pink2": "#cf9495",
+        "yellow": "#edc690",
 
       }
     },

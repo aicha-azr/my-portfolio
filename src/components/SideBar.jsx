@@ -7,10 +7,11 @@ const SideBar = () => {
   return (
     <>
     
-<nav className="bg-opacity-50 bg-beige backdrop-blur-sm lg:rounded-full top-2  px-2 sm:px-4 py-2.5 rounded shadow sticky top-0 w-full z-10 rounded  ">
-  <div className="container flex flex-wrap justify-between items-center mx-auto">
+<nav className="bg-opacity-30 bg-pink2 backdrop-blur-md md:rounded-full top-2   sm:px-4 py-2 rounded shadow sticky  md:w-fit z-20 rounded  shadow-md w-full flex justify-center self-center rounded-bl-sm rounded-br-2xl rounded-tl-2xl rounded-tr-sm px-1" >
+  <div className="container md:flex md:flex-row md:flex-wrap justify-between items-center lg:gap-20 md:gap-5 flex flex-col  ">
+    <div className='flex justify-between  w-full md:w-fit'>
     <a href="/" className="flex items-center">
-      <span className="font-greatVibes self-center text-xl font-semibold font-lugrasimo whitespace-nowrap text-[#1c1dab]">
+      <span className="font-greatVibes self-center text-xl font-semibold font-lugrasimo whitespace-nowrap text-bleuGreen px-1">
         Aicha Azeroual
       </span>
     </a>
@@ -19,7 +20,8 @@ const SideBar = () => {
       <button
         id="menu-toggle"
         type="button"
-        className="inline-flex items-center p-2 ml-3 text-sm text-[#1c1dab] rounded-lg bg-[#e893c5] hover:bg-[#ebb2c3] focus:outline-none focus:ring-2 focus:ring-gray-200 md:hidden"
+        className="inline-flex items-center p-2 ml-3 text-sm text-bleuGreen 
+        rounded-bl-sm rounded-br-2xl rounded-tl-2xl rounded-tr-sm  bg-yellow  focus:outline-none md:hidden "
         onClick={()=>setIsOpen(!isOpen)}
       >
         <span className="sr-only">Open main menu</span>
@@ -34,7 +36,7 @@ const SideBar = () => {
         </svg>
       </button>
     </div>
-
+</div>
     <div
       className={isOpen?"w-full md:block md:w-auto":" md:block md:w-auto hidden"}
       id="mobile-menu"
@@ -43,7 +45,7 @@ const SideBar = () => {
         <li>
           <a
             href="#"
-            className="block py-2 pr-4 pl-3 text-[#1e0f75] border-b border-t border-gray-100 hover:bg-v2 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2"
+            className="block py-2 pr-4 pl-3 text-bleuGreen border-b border-t border-gray-100 hover:bg-beige md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2"
             aria-current="page"
           >
             Home
@@ -52,7 +54,7 @@ const SideBar = () => {
         <li>
           <a
             href="#about"
-            className="block py-2 pr-4 pl-3 text-[#1e0f75] border-b border-gray-100 hover:bg-v2 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2"
+            className="block py-2 pr-4 pl-3 text-bleuGreen border-b border-gray-100 hover:bg-beige md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2"
           >
             About
           </a>
@@ -60,7 +62,7 @@ const SideBar = () => {
         <li>
           <a
             href="#"
-            className="block py-2 pr-4 pl-3 text-[#1e0f75] border-b border-gray-100 hover:bg-v2 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            className="block py-2 pr-4 pl-3 text-bleuGreen border-b border-gray-100 hover:bg-beige md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
           >
             Projects
           </a>
@@ -68,7 +70,7 @@ const SideBar = () => {
         <li>
           <a
             href="#"
-            className="block py-2 pr-4 pl-3 text-[#1e0f75] border-b border-gray-100 hover:bg-v2 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            className="block py-2 pr-4 pl-3 text-bleuGreen border-b border-gray-100 hover:bg-beige md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
           >
             Contact
           </a>
@@ -76,7 +78,7 @@ const SideBar = () => {
         <li>
           <a
             href={Cv}
-            className="block p-3 text-[#1e0f75] md:border-0 md:hover:text-blue-700 md:p-2   bg-[#bf8ce1]  rounded-md hover:text-b1 transform hover:scale-110 md:mt-0 mt-2"
+            className="block p-3 text-bleuGreen md:border-0 md:p-2 hover:font-bold   bg-yellow  rounded-md  transform hover:scale-110 md:mt-0 mt-2 shadow shadow-md drop-shadow-md hover:drop-shadow-xl opacity-90 lg:rounded-xl "
           download>
             Download CV
           </a>

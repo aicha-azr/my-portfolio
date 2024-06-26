@@ -18,26 +18,25 @@ const Home = ()=>{
           });
       });
     return (<>
-<section className="relative h-fit flex flex-col  min-h-screen justify-center gap-8 rounded rounded-lg bg-opacity-50 shadow-md absolute bg-gradient-to-r from-[#edc690] via-beige to-[#f6f6f6]  rounded-lg blur-40 z-0 ">
+<section className="relative h-fit flex flex-col  min-h-screen lg:w-full justify-center gap-8 rounded rounded-lg bg-opacity-50 shadow-md  bg-gradient-to-r from-[#edc690] via-beige to-[#f6f6f6]  rounded-lg blur-40 z-10 ">
     <div className="flex items-center justify-around  mx-auto w-full z-2 h-fit
     ">
-            <div className="flex rounded-full hidden md:block relative bg-bleuGreen shadow-md m-2" >
+            <div className="flex rounded-full hidden md:block relative bg-bleuGreen drop-shadow-2xl drop-shadow-bleuGreen hover:drop-shadow-xl shadow-md shadow-bleuGreen m-2" >
              
         <img src={me} alt="aicha" className="mx-auto  rounded-full  drop-shadow-lg  " width={230} height={230} data-aos="fade-up z-2"/>
         
        
 
     </div>
-        <div className="w-20 h-20 rounded-full  absolute top-[6rem] translate-x-20 right-30 z-0 animate-marquee bg-bleuGreen blur-lg  rounded-full shadow-xl shadow-bleuGreen blur-lg blur-70 opacity-25"></div> 
-        <div className="w-20 h-20 rounded-full bg-bleuGreen absolute top-[28rem] translate-x-[10rem] z-0 right-10 animate-marquee opacity-25 shadow shadow-xl shadow-bleuGreen lg:block hidden blur-lg  "></div>  
-        <div className="w-20 h-20 rounded-full bg-bleuGreen blur-2xl absolute top-[27rem] translate-x-12 left-[15rem] z-0 animate-marquee shadow-xl shadow-bleuGreen"></div>  
+         
+
 
         <div className=" z-2 gap-5 lg:col-span-7 flex flex-col items-center text-center mt-2">
-            <h2 className="max-w-xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-4xl text-green " data-aos="fade-right">
+            <h2 className="max-w-xl mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-3xl xl:text-4xl text-green " data-aos="fade-right">
             Hello! I'm <span className="text-clip overflow-hidden  text-transparent bg-clip-text bg-gradient-to-tr from-[#cf9495] to-[#ecc2bd] animate-typing overflow-hidden">Aicha</span>,</h2>
-            <h2 className="max-w-xl  text-1xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-2xl text-green" data-aos="fade-right">
+            <h2 className="max-w-xl  text-2xl font-extrabold tracking-tight leading-none md:text-2xl xl:text-2xl text-green" data-aos="fade-right">
             a Full-Stack Developer Specializing in MERN Stack</h2>
-            <p className="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-lg lg:text-xl text-black z-10 " data-aos="fade-up">
+            <p className="max-w-2xl mb-6 font-light text-black lg:mb-8 md:text-lg lg:text-xl text-black z-10 font-medium " data-aos="fade-up">
             As a passionate and dedicated Junior Full Stack Developer, I focus on the MERN stack, which includes MongoDB, Express.js, React.js, and Node.js. I'm committed to crafting dynamic, high-performance web applications that meet client expectations.
             </p>
           
@@ -47,7 +46,7 @@ const Home = ()=>{
     </div> 
     <div className="flex self-center">
           
-            <a href="#about" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-black border border-bleuGreen rounded-lg hover:bg-beige focus:ring-4 focus:ring-gray-100  animate-bounce focus:animate-none hover:animate-none shadow shadow-md hover:text-green">
+            <a href="#about" className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-black border border-bleuGreen rounded-lg hover:bg-beige focus:ring-4 focus:ring-gray-100  animate-bounce focus:animate-none hover:animate-none shadow shadow-md hover:text-bleuGreen">
                 scroll down <ArrowDownToDot />
             </a>
              </div>
