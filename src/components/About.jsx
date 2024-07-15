@@ -8,34 +8,68 @@ const About = ()=>{
             duration: 1000,
             easing: 'ease-in-out',
             once: true 
-          });
+          },[]);
       });
     return(
         <>
-        <section className="py-12 flex flex-col items-center gap-16 mt-10" id="about">
+        <section className="py-12 flex  md:flex-row items-center gap-16 mt-10 border border-black relative" id="about">
+         {/*     <div className="w-full mb-8 md:w-1/2 self-start flex flex-col border border-red-500">
             
-              <h2 className="max-w-xl mb-4 text-3xl font-extrabold tracking-tight md:self-start md:w-1/2 leading-none md:text-4xl xl:text-5xl text-b1" data-aos="fade-right">About Me</h2>  
-            
-        <div className="flex justify-around flex-col md:flex-row " data-aos="fade-up">      
-    <div className="w-fit mb-8 md:w-1/3 self-start">
+        <h2 className="max-w-xl mb-4 text-3xl font-extrabold tracking-tight md:self-start md:w-1/2 leading-none md:text-4xl xl:text-5xl text-bleuGreen" >About Me</h2> 
         
-        
-            <div className="">
-                <p className="text-lg text-black mb-4 py-3 leading-10">I'm a passionate <span className="text-b2 md:text-xl font-bold ">Full Stack </span> developer. I love building web applications and exploring new technologies. My expertise lies in the MERN (MongoDB, Express.js, React.js, Node.js) stack, and I'm constantly learning and adapting to new technologies to enhance my skills.</p>
+            <div className=" bg-blur-md bg-pink bg-opacity-40 md:rounded-xl md:ml-3 p-3 mx-3 rounded-bl-sm rounded-br-2xl rounded-tl-2xl rounded-tr-sm" >
+                <p className="text-lg text-black mb-4 py-3 leading-8">I am a passionate Junior Full Stack Developer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js). With a solid foundation in both front-end and back-end development, I enjoy creating dynamic web applications with excellent user experiences.
+
+</p>
+<p className="text-lg text-black mb-4 py-3 leading-8">
+I am committed to continuous learning in web development and aim to leverage my skills to create innovative solutions that exceed client expectations. I thrive in collaborative environments and am eager to take on new challenges and learn from experienced professionals.
+
+</p>
             </div>
-        
-    </div>
-                <div className="flex flex-col gap-3 justify-center md:mb-8 ">
+            </div>*/}
+            <div className="flex flex-col border border-blue-500 justify-between w-full gap-20 ">
+            <h2 className="max-w-xl mb-4 text-3xl font-extrabold tracking-tight  md:w-1/2 leading-none md:text-4xl xl:text-5xl text-bleuGreen self-center animate-textAni" >What i do</h2>  
+            <div className="flex  justify-around lg:flex-row flex-col items-center gap-10 lg:gap-0">
+                <div className="bg-pink2 min-h-fit h-40 p-2 rotate-[10deg] rounded-xl lg:w-1/4 w-1/2 relative ">
+                <div className="bg-beige h-full w-full rounded-xl absolute rotate-[-10deg] p-1 hover:scale-110 hover:shadow-lg hover:shadow-pink2">
+                    <h3 className="font-bold text-xl">Front-End Development</h3>
+                    <p>
+                    <span className="font-bold">Creating User-Friendly Interfaces:</span> I develop responsive and engaging interfaces using React.js, ensuring a seamless user experience across all devices.
+                    </p>
+                </div>
+                </div>
+                <div className="bg-pink2 min-h-fit h-40 p-2 rotate-[10deg] rounded-xl lg:w-1/4 w-1/2 relative ">
+                <div className="bg-beige h-fit w-full rounded-xl absolute rotate-[-10deg] p-1 hover:scale-110 hover:shadow-lg hover:shadow-pink2"
+            >
+                    <h3 className="font-bold text-xl">Back-End Development</h3>
+                    <p>
+                    <span className="font-bold">Building Robust Applications:</span> I build reliable server-side applications with Node.js and Express.js, and manage databases efficiently using MongoDB.
+                    </p>
+                </div>
+                </div>
+                <div className="bg-pink2 min-h-fit h-40 p-2 rotate-[10deg] rounded-xl lg:w-1/4 w-1/2 relative ">
+                <div className="bg-beige h-fit w-full rounded-xl absolute rotate-[-10deg] p-1 hover:scale-110 hover:shadow-lg hover:shadow-pink2">
+                <h3 className="font-bold text-xl">Full-Stack Integration</h3>
+                    <p>
+                    <span className="font-bold">Delivering End-to-End Solutions:</span> I integrate front-end and back-end technologies to ensure smooth and secure communication, delivering comprehensive solutions.
+                    </p>
+                </div>
+            </div>
+            </div>
+           
+            </div>
+  
+               
+</section>
+
+                {/*<div className="flex flex-col gap-3 justify-center md:mb-8 ">
                 <h3 className="text-xl text-BRoyal font-bold mb-4 text-center">Technologies I master:</h3>
                 <div className="grid grid-cols-5 gap-4 items-center ">
                     {technologies.map((item, index) => (
                         <img key={index} src={item} alt="tech" className={`rounded-md shadow w-10 h-10 mx-2 mb-2 animate-bounce [animation-delay:-0.1s]`} />
                     ))}
                 </div>
-                </div>
-                </div>
-</section>
-
+                </div>*/}
         </>
     )
 }

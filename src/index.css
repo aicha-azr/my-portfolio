@@ -8,7 +8,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background: #f6f6f6;
+  background: linear-gradient(to right, #edc690, beige, #f6f6f6) cover ;
  
 
   font-synthesis: none;

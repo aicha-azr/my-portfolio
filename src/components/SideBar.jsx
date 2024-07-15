@@ -7,7 +7,7 @@ const SideBar = () => {
   return (
     <>
     
-<nav className="bg-opacity-30 bg-pink2 backdrop-blur-md md:rounded-full top-2   sm:px-4 py-2 rounded shadow sticky  md:w-fit z-20 rounded  shadow-md w-full flex justify-center self-center rounded-bl-sm rounded-br-2xl rounded-tl-2xl rounded-tr-sm px-1" >
+<nav className="bg-opacity-40 bg-pink2  md:rounded-full mt-1   sm:px-4 py-2 rounded shadow fixed top-1  md:w-fit z-20 rounded  shadow-md w-full flex justify-center self-center rounded-bl-sm rounded-br-2xl rounded-tl-2xl rounded-tr-sm px-1" >
   <div className="container md:flex md:flex-row md:flex-wrap justify-between items-center lg:gap-20 md:gap-5 flex flex-col  ">
     <div className='flex justify-between  w-full md:w-fit'>
     <a href="/" className="flex items-center">
@@ -44,7 +44,7 @@ const SideBar = () => {
       <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium ">
         <li>
           <a
-            href="#"
+            href="/"
             className="block py-2 pr-4 pl-3 text-bleuGreen border-b border-t border-gray-100 hover:bg-beige md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2"
             aria-current="page"
           >
