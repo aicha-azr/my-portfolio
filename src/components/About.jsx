@@ -12,7 +12,7 @@ const About = ()=>{
       });
     return(
         <>
-        <section className="py-12 flex  md:flex-row items-center gap-16 mt-10 border border-black relative" id="about">
+        <section className="py-12 flex flex-col  gap-16 mt-10   w-full" id="about">
          {/*     <div className="w-full mb-8 md:w-1/2 self-start flex flex-col border border-red-500">
             
         <h2 className="max-w-xl mb-4 text-3xl font-extrabold tracking-tight md:self-start md:w-1/2 leading-none md:text-4xl xl:text-5xl text-bleuGreen" >About Me</h2> 
@@ -27,19 +27,21 @@ I am committed to continuous learning in web development and aim to leverage my 
 </p>
             </div>
             </div>*/}
-            <div className="flex flex-col border border-blue-500 justify-between w-full gap-20 ">
-            <h2 className="max-w-xl mb-4 text-3xl font-extrabold tracking-tight  md:w-1/2 leading-none md:text-4xl xl:text-5xl text-bleuGreen self-center animate-textAni" >What i do</h2>  
-            <div className="flex  justify-around lg:flex-row flex-col items-center gap-10 lg:gap-0">
-                <div className="bg-pink2 min-h-fit h-40 p-2 rotate-[10deg] rounded-xl lg:w-1/4 w-1/2 relative ">
-                <div className="bg-beige h-full w-full rounded-xl absolute rotate-[-10deg] p-1 hover:scale-110 hover:shadow-lg hover:shadow-pink2">
+            
+            <h2 className="max-w-xl mb-4 text-4xl font-extrabold tracking-tight  md:w-1/2 leading-none md:text-5xl xl:text-6xl text-bleuGreen self-center animate-textAni px-3 " >What i do</h2>  
+
+            <div className="hidden lg:flex-row md:flex md:flex-col md:justify-center md:items-center  md:block mx-2 gap-5 gap-10">
+            <div className="bg-pink2 h-fit  rounded-xl lg:w-1/4 md:w-1/2 w-full rotate-[6deg] ">
+                <div className="bg-beige h-fit w-full rounded-xl   p-1 hover:scale-110 hover:shadow-lg hover:shadow-pink2 rotate-[-6deg]">
                     <h3 className="font-bold text-xl">Front-End Development</h3>
                     <p>
                     <span className="font-bold">Creating User-Friendly Interfaces:</span> I develop responsive and engaging interfaces using React.js, ensuring a seamless user experience across all devices.
                     </p>
                 </div>
                 </div>
-                <div className="bg-pink2 min-h-fit h-40 p-2 rotate-[10deg] rounded-xl lg:w-1/4 w-1/2 relative ">
-                <div className="bg-beige h-fit w-full rounded-xl absolute rotate-[-10deg] p-1 hover:scale-110 hover:shadow-lg hover:shadow-pink2"
+
+                <div className="bg-pink2 h-fit rounded-xl lg:w-1/4 md:w-1/2 rotate-[6deg]">
+                <div className="bg-beige h-fit w-full rounded-xl  p-1 hover:scale-110 hover:shadow-lg hover:shadow-pink2 rotate-[-6deg]"
             >
                     <h3 className="font-bold text-xl">Back-End Development</h3>
                     <p>
@@ -47,8 +49,8 @@ I am committed to continuous learning in web development and aim to leverage my 
                     </p>
                 </div>
                 </div>
-                <div className="bg-pink2 min-h-fit h-40 p-2 rotate-[10deg] rounded-xl lg:w-1/4 w-1/2 relative ">
-                <div className="bg-beige h-fit w-full rounded-xl absolute rotate-[-10deg] p-1 hover:scale-110 hover:shadow-lg hover:shadow-pink2">
+                <div className="bg-pink2 lg:h-1/4 md:h-1/2  rounded-xl lg:w-1/4 md:w-1/2 rotate-[6deg] ">
+                <div className="bg-beige h-fit max-h-fit w-fit rounded-xl   p-1 hover:scale-110 hover:shadow-lg hover:shadow-pink2 rotate-[-6deg]">
                 <h3 className="font-bold text-xl">Full-Stack Integration</h3>
                     <p>
                     <span className="font-bold">Delivering End-to-End Solutions:</span> I integrate front-end and back-end technologies to ensure smooth and secure communication, delivering comprehensive solutions.
@@ -56,10 +58,32 @@ I am committed to continuous learning in web development and aim to leverage my 
                 </div>
             </div>
             </div>
+            
            
-            </div>
   
-               
+               <div className="grid grid-row  block md:hidden mx-2 gap-5">
+               <div className="bg-beige h-fit w-fit rounded-xl p-1 hover:scale-110 hover:shadow-lg hover:shadow-pink2">
+                    <h3 className="font-bold text-xl">Front-End Development</h3>
+                    <p>
+                    <span className="font-bold">Creating User-Friendly Interfaces:</span> I develop responsive and engaging interfaces using React.js, ensuring a seamless user experience across all devices.
+                    </p>
+                </div>
+
+                    <div className="bg-beige h-fit w-fit rounded-xl p-1 hover:scale-110 hover:shadow-lg hover:shadow-pink2 "
+            >
+                    <h3 className="font-bold text-xl">Back-End Development</h3>
+                    <p>
+                    <span className="font-bold">Building Robust Applications:</span> I build reliable server-side applications with Node.js and Express.js, and manage databases efficiently using MongoDB.
+                    </p>
+                </div>
+
+                    <div className="bg-beige h-full max-h-fit w-full rounded-xl p-1 hover:scale-110 hover:shadow-lg hover:shadow-pink2">
+                <h3 className="font-bold text-xl">Full-Stack Integration</h3>
+                    <p>
+                    <span className="font-bold">Delivering End-to-End Solutions:</span> I integrate front-end and back-end technologies to ensure smooth and secure communication, delivering comprehensive solutions.
+                    </p>
+                </div>
+               </div>
 </section>
 
                 {/*<div className="flex flex-col gap-3 justify-center md:mb-8 ">
