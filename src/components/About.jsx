@@ -28,9 +28,9 @@ I am committed to continuous learning in web development and aim to leverage my 
             </div>
             </div>*/}
             
-            <h2 className="max-w-xl mb-4 text-4xl font-extrabold tracking-tight  md:w-1/2 leading-none md:text-5xl xl:text-6xl text-bleuGreen self-center animate-textAni px-3 " >What i do</h2>  
+            <h2 className="mb-4 text-3xl font-extrabold tracking-tight leading-none md:text-4xl xl:text-5xl text-[#023246] self-start animate-textAni px-3 " >What i do</h2>  
 
-            <div className="hidden lg:flex-row md:flex md:flex-col md:justify-center md:items-center  md:block mx-2 gap-5 gap-10">
+            <div className="hidden lg:flex-row md:flex md:flex-col md:justify-center md:items-center  md:block mx-2 gap-5 gap-10 lg:gap-20">
             <div className="bg-pink2 h-fit  rounded-xl lg:w-1/4 md:w-1/2 w-full rotate-[6deg] ">
                 <div className="bg-beige h-fit w-full rounded-xl   p-1 hover:scale-110 hover:shadow-lg hover:shadow-pink2 rotate-[-6deg]">
                     <h3 className="font-bold text-xl">Front-End Development</h3>

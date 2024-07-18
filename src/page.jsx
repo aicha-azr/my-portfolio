@@ -21,6 +21,7 @@ function Page() {
 
   <Home/>
   <About />
+  <Projects />
     </div>
 
   <div className="w-20 h-20 rounded-md  absolute top-[6rem] translate-x-20 right-30 z-0 animate-moveY bg-bleuGreen blur-lg  rounded-full shadow-xl shadow-bleuGreen blur-lg blur-70 opacity-25"></div> 
