@@ -7,7 +7,7 @@ const SideBar = () => {
   return (
     <>
     
-<nav className="bg-opacity-40 bg-pink2  md:rounded-full mt-1   sm:px-4 py-2 rounded shadow fixed top-1  md:w-fit z-20 rounded  shadow-md w-full flex justify-center self-center rounded-bl-sm rounded-br-2xl rounded-tl-2xl rounded-tr-sm px-1" >
+<nav className="bg-opacity-60 bg-pink2  md:rounded-full mt-1   sm:px-4 py-2 rounded shadow fixed top-1  md:w-fit z-20 rounded  shadow-md w-full flex justify-center self-center rounded-bl-sm rounded-br-2xl rounded-tl-2xl rounded-tr-sm px-1" >
   <div className="container md:flex md:flex-row md:flex-wrap justify-between items-center lg:gap-20 md:gap-5 flex flex-col  ">
     <div className='flex justify-between  w-full md:w-fit'>
     <a href="/" className="flex items-center">
@@ -45,7 +45,7 @@ const SideBar = () => {
         <li>
           <a
             href="#home"
-            className="block py-2 pr-4 pl-3 text-bleuGreen border-b border-t border-gray-100 hover:bg-beige md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2"
+            className="block py-2 pr-4 pl-3 text-[#023246] border-b border-t border-gray-100 hover:bg-beige md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2"
             aria-current="page"
           >
             Home
@@ -54,7 +54,7 @@ const SideBar = () => {
         <li>
           <a
             href="#about"
-            className="block py-2 pr-4 pl-3 text-bleuGreen border-b border-gray-100 hover:bg-beige md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2"
+            className="block py-2 pr-4 pl-3 text-[#023246] border-b border-gray-100 hover:bg-beige md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2"
           >
             About
           </a>
@@ -62,7 +62,7 @@ const SideBar = () => {
         <li>
           <a
             href="#projects"
-            className="block py-2 pr-4 pl-3 text-bleuGreen border-b border-gray-100 hover:bg-beige md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            className="block py-2 pr-4 pl-3 text-[#023246] border-b border-gray-100 hover:bg-beige md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
           >
             Projects
           </a>
@@ -70,7 +70,7 @@ const SideBar = () => {
         <li>
           <a
             href="#"
-            className="block py-2 pr-4 pl-3 text-bleuGreen border-b border-gray-100 hover:bg-beige md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            className="block py-2 pr-4 pl-3 text-[#023246] border-b border-gray-100 hover:bg-beige md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-2 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
           >
             Contact
           </a>
@@ -78,7 +78,7 @@ const SideBar = () => {
         <li>
           <a
             href={Cv}
-            className="block p-3 text-bleuGreen md:border-0 md:p-2 hover:font-bold   bg-yellow  rounded-md  transform hover:scale-110 md:mt-0 mt-2 shadow shadow-md drop-shadow-md hover:drop-shadow-xl opacity-90 lg:rounded-xl "
+            className="block p-3 text-[#023246] md:border-0 md:p-2 hover:font-bold   bg-yellow  rounded-md  transform hover:scale-110 md:mt-0 mt-2 shadow shadow-md drop-shadow-md hover:drop-shadow-xl opacity-90 lg:rounded-xl "
           download>
             Download CV
           </a>
