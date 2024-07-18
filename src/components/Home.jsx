@@ -18,7 +18,7 @@ const Home = ()=>{
           });
       });
     return (<>
-<section className="relative h-fit flex flex-col  min-h-screen lg:w-full justify-center gap-8 rounded rounded-lg bg-opacity-50 shadow-md   rounded-lg blur-40 z-10 ">
+<section id="home" className="relative h-fit flex flex-col  min-h-screen lg:w-full justify-center gap-8 rounded rounded-lg bg-opacity-50 shadow-md   rounded-lg blur-40 z-10 ">
     <div className="flex items-center justify-around  mx-auto w-full z-2 h-fit
     ">
            <div className="flex rounded-full hidden md:block relative bg-bleuGreen drop-shadow-2xl drop-shadow-bleuGreen hover:drop-shadow-xl shadow-md shadow-bleuGreen m-2 relative" >
