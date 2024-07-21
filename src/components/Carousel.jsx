@@ -33,7 +33,7 @@ export function CarouselCustomNavigation() {
     {filteredProjects.map((item, index) => (
                 <div
                     key={index}
-                    className='flex flex-col gap-4 items-center md:w-1/2 lg:w-[400px] h-[15.5rem] rounded-[11px] shadow-md shadow-xl border border-red-800 h-fit relative'
+                    className='flex flex-col gap-4 items-center md:w-1/2 lg:w-[400px] h-[15.5rem] rounded-[11px] shadow-md shadow-xl h-fit relative'
                    
                     onMouseEnter={() => setDisplayedIndex(index)}
                     onMouseLeave={() => setDisplayedIndex(null)}
