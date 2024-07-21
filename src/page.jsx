@@ -7,6 +7,8 @@ import Home from './components/Home';
 import SideBar from './components/SideBar';
 import About from './components/About';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
+
 function Page() {
 
   return (
@@ -14,14 +16,15 @@ function Page() {
 
 
 
-   <main className=' w-screen max-w-full h-full  border border-black left-0 right-0 top-0   flex  justify-center fixed px-1 overflow-y-scroll scroll-smooth '>
-    <div className='flex flex-col justify-center  border border-red-800 h-fit px-1 w-full'>
+   <main className=' w-screen max-w-full h-full left-0 right-0 top-0   flex  justify-center fixed px-1 overflow-y-scroll scroll-smooth '>
+    <div className='flex flex-col justify-center h-fit px-1 w-full'>
     <SideBar/>
 
 
   <Home/>
   <About />
   <Projects />
+  <Contact />
     </div>
 
   <div className="w-20 h-20 rounded-md  absolute top-[6rem] translate-x-20 right-30 z-0 animate-moveY bg-bleuGreen blur-lg  rounded-full shadow-xl shadow-bleuGreen blur-lg blur-70 opacity-25"></div> 
