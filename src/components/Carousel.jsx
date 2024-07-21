@@ -22,7 +22,7 @@ export function CarouselCustomNavigation() {
       },[]);
   });
   return (
-    <div className=' flex  flex-col gap-3  border border-black'>
+    <div className=' flex  flex-col gap-3'>
       <div className="flex justify-around md:gap-6 md:w-1/2 text-black md:pl-4 font-medium">
         <p className="  p-1 px-2 focus:outline-none hover:text-[#F564AB]" onClick={() => filtrage("All")}>All</p>
         <p className="  focus:outline-none p-1 hover:text-[#F564AB]" onClick={() => filtrage("Full Stack")}>Full Stack</p>
@@ -33,7 +33,7 @@ export function CarouselCustomNavigation() {
     {filteredProjects.map((item, index) => (
                 <div
                     key={index}
-                    className='flex flex-col gap-4 items-center md:w-1/2 lg:w-[400px] h-[15rem] rounded-[11px] shadow-md shadow-xl border border-red-800 h-fit relative'
+                    className='flex flex-col gap-4 items-center md:w-1/2 lg:w-[400px] h-[15.5rem] rounded-[11px] shadow-md shadow-xl border border-red-800 h-fit relative'
                    
                     onMouseEnter={() => setDisplayedIndex(index)}
                     onMouseLeave={() => setDisplayedIndex(null)}
@@ -46,10 +46,10 @@ export function CarouselCustomNavigation() {
                     <div className="absolute left-1 bottom-2 backdrop-opacity-10">
                         <h3 className={displayedIndex === index ?'hidden':'text-[#023246] md:text-xl bg-brightness-50 font-medium'}>{item.title}</h3>
                     </div>
-                    <div className={displayedIndex === index ? 'block absolute h-full p-1 py-0 bg-pink text-blueGreen text-start rounded-xl flex flex-col justify-center ' : 'hidden'} data-aos="fade-up">
+                    <div className={displayedIndex === index ? 'block absolute h-fit min-h-full z-20 p-1 py-0 bg-pink text-blueGreen text-start rounded-xl flex flex-col justify-center ' : 'hidden'} data-aos="fade-up">
                     <h3 className={displayedIndex === index ?'text-black font-medium md:text-xl bg-brightness-50':'hidden'} >{item.title}</h3>
                         <p>{item.description}</p>
-                        <Link href={item.link} className="bg-yellow rounded-full p-0.5 mx-2"/>
+                        <Link href={item.link} color="black" size={30} className="bg-b4 rounded-full p-1 mx-2 absolute top-1 right-1"/>
                         
                     </div>
                 </div>
