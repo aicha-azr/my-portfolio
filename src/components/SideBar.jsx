@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import logo from '../assets/logo.png';
 import Cv from '../assets/aicha_azeroual.pdf';
-
+import myLogo from '../assets/myLogo.ico'
 const SideBar = () => {
     const [isOpen, setIsOpen] = useState(false);
   return (
@@ -11,9 +11,10 @@ const SideBar = () => {
   <div className="container md:flex md:flex-row md:flex-wrap justify-between items-center lg:gap-20 md:gap-5 flex flex-col  ">
     <div className='flex justify-between  w-full md:w-fit'>
     <a href="/" className="flex items-center">
-      <span className="font-greatVibes self-center text-xl font-semibold font-lugrasimo whitespace-nowrap text-bleuGreen px-1">
+     {/* <span className="font-greatVibes self-center text-xl font-semibold font-lugrasimo whitespace-nowrap text-bleuGreen px-1">
         Aicha Azeroual
-      </span>
+      </span>*/}
+      <img src={myLogo} alt="logo" className='w-8 h-8' />
     </a>
 
     <div className="flex items-center">
