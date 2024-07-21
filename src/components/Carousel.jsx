@@ -1,10 +1,12 @@
 import { Carousel } from "@material-tailwind/react";
 import projects from "../db/projects";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "lucide-react";
+import Aos from "aos";
  
 export function CarouselCustomNavigation() {
   const [filteredProjects, setFilteredProjects] = useState(projects);
-
+  const [displayedIndex, setDisplayedIndex] = useState(null);
   const filtrage = (value) => {
     if (value === "All") {
       setFilteredProjects(projects);
@@ -12,22 +14,46 @@ export function CarouselCustomNavigation() {
       setFilteredProjects(projects.filter(item => item.category === value));
     }
   };
+  useEffect(() => {
+    Aos.init({
+        duration: 1000,
+        easing: 'ease-in-out',
+        once: true 
+      },[]);
+  });
   return (
     <div className=' flex  flex-col gap-3  border border-black'>
-      <div className="flex gap-6 md:w-1/2 text-black pl-4 font-medium">
-        <button className="rounded rounded-full bg-[#fffdfd] border border-bleuGreen p-1 px-2 shadow shadow-md hover:text-[#F564AB]" onClick={() => filtrage("All")}>All</button>
-        <button className="rounded rounded-full bg-[#fffdfd] border border-bleuGreen p-1 shadow shadow-md hover:text-[#F564AB]" onClick={() => filtrage("Full Stack")}>Full Stack</button>
-        <button className="rounded rounded-full bg-[#fffdfd] border border-bleuGreen p-1 shadow shadow-md hover:text-[#F564AB]" onClick={() => filtrage("Frontend")}>Frontend</button>
-        <button className="rounded rounded-full bg-[#fffdfd] border border-bleuGreen p-1 shadow shadow-md hover:text-[#F564AB] " onClick={() => filtrage("Backend")}>Backend</button>
+      <div className="flex justify-around md:gap-6 md:w-1/2 text-black md:pl-4 font-medium">
+        <p className="  p-1 px-2 focus:outline-none hover:text-[#F564AB]" onClick={() => filtrage("All")}>All</p>
+        <p className="  focus:outline-none p-1 hover:text-[#F564AB]" onClick={() => filtrage("Full Stack")}>Full Stack</p>
+        <p className="  focus:outline-none p-1 hover:text-[#F564AB]" onClick={() => filtrage("Frontend")}>Frontend</p>
+        <p className="  focus:outline-none p-1 hover:text-[#F564AB] " onClick={() => filtrage("Backend")}>Backend</p>
         </div>
     <div className="  flex flex-wrap flex-row gap-8 p-3 border border-green-800 items-center w-fit justify-start ">
-      {filteredProjects.map((item, index) => (
-                    <div key={index} className=' flex flex-col gap-5 items-center  md:w-1/2 h-fit rounded rounded-[11px]  shadow shadow-md  h-[15rem] lg:w-[400px] relative shadow-xl shadow-inner hover:text-white'   style={{ backgroundImage: `url(${item.image})` }}>
-                        <img src={item.image}  alt={item.title} className= "shadow shadow-md rounded-lg w-full h-full hover:brightness-50" />
-                        <div className="absolute left-1 bottom-2 backdrop-opacity-10">
-                        <a href={item.link} className='text-green md:text-xl  bg-brightness-50'>{item.title}</a></div>
+    {filteredProjects.map((item, index) => (
+                <div
+                    key={index}
+                    className='flex flex-col gap-4 items-center md:w-1/2 lg:w-[400px] h-[15rem] rounded-[11px] shadow-md shadow-xl border border-red-800 h-fit relative'
+                   
+                    onMouseEnter={() => setDisplayedIndex(index)}
+                    onMouseLeave={() => setDisplayedIndex(null)}
+                >
+                    <img
+                        src={item.image}
+                        alt={item.title}
+                        className="shadow-md rounded-lg w-full h-full hover:brightness-50"
+                    />
+                    <div className="absolute left-1 bottom-2 backdrop-opacity-10">
+                        <h3 className={displayedIndex === index ?'hidden':'text-[#023246] md:text-xl bg-brightness-50 font-medium'}>{item.title}</h3>
                     </div>
-                ))}
+                    <div className={displayedIndex === index ? 'block absolute h-full p-1 py-0 bg-pink text-blueGreen text-start rounded-xl flex flex-col justify-center ' : 'hidden'} data-aos="fade-up">
+                    <h3 className={displayedIndex === index ?'text-black font-medium md:text-xl bg-brightness-50':'hidden'} >{item.title}</h3>
+                        <p>{item.description}</p>
+                        <Link href={item.link} className="bg-yellow rounded-full p-0.5 mx-2"/>
+                        
+                    </div>
+                </div>
+            ))}
     
     </div>
 </div>
