@@ -10,12 +10,12 @@ const SideBar = () => {
 <nav className="bg-opacity-60 bg-pink2  md:rounded-full mt-1   sm:px-4 py-2 rounded shadow fixed top-1  md:w-fit z-20 rounded  shadow-md w-full flex justify-center self-center rounded-bl-sm rounded-br-2xl rounded-tl-2xl rounded-tr-sm px-1" >
   <div className="container md:flex md:flex-row md:flex-wrap justify-between items-center lg:gap-20 md:gap-5 flex flex-col  ">
     <div className='flex justify-between  w-full md:w-fit'>
-    <a href="/" className="flex items-center">
+    <div href="/" className="flex items-center">
      {/* <span className="font-greatVibes self-center text-xl font-semibold font-lugrasimo whitespace-nowrap text-bleuGreen px-1">
         Aicha Azeroual
       </span>*/}
       <img src={myLogo} alt="logo" className='w-8 h-8' />
-    </a>
+    </div>
 
     <div className="flex items-center">
       <button
