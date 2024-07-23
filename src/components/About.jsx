@@ -33,9 +33,9 @@ I am committed to continuous learning in web development and aim to leverage my 
             <div className="hidden lg:flex-row md:flex md:flex-col md:justify-center md:items-center  md:block mx-2 gap-5 gap-10 lg:gap-20">
             <div className="bg-pink2 h-fit  rounded-xl lg:w-1/4 md:w-1/2 w-full rotate-[6deg] ">
                 <div className="bg-beige h-fit w-full rounded-xl   p-1 hover:scale-110 hover:shadow-lg hover:shadow-pink2 rotate-[-6deg]">
-                    <h3 className="font-bold text-xl">Front-End Development</h3>
-                    <p>
-                    <span className="font-bold">Creating User-Friendly Interfaces:</span> I develop responsive and engaging interfaces using React.js, ensuring a seamless user experience across all devices.
+                    <h3 className="font-bold text-xl text-black">Front-End Development</h3>
+                    <p className="text-[#023246]">
+                    <span className="font-bold ">Creating User-Friendly Interfaces:</span> I develop responsive and engaging interfaces using React.js, ensuring a seamless user experience across all devices.
                     </p>
                 </div>
                 </div>
@@ -43,16 +43,16 @@ I am committed to continuous learning in web development and aim to leverage my 
                 <div className="bg-pink2 h-fit rounded-xl lg:w-1/4 md:w-1/2 rotate-[6deg]">
                 <div className="bg-beige h-fit w-full rounded-xl  p-1 hover:scale-110 hover:shadow-lg hover:shadow-pink2 rotate-[-6deg]"
             >
-                    <h3 className="font-bold text-xl">Back-End Development</h3>
-                    <p>
+                    <h3 className="font-bold text-xl text-black">Back-End Development</h3>
+                    <p className="text-[#023246]">
                     <span className="font-bold">Building Robust Applications:</span> I build reliable server-side applications with Node.js and Express.js, and manage databases efficiently using MongoDB.
                     </p>
                 </div>
                 </div>
                 <div className="bg-pink2 lg:h-1/4 md:h-1/2  rounded-xl lg:w-1/4 md:w-1/2 rotate-[6deg] ">
                 <div className="bg-beige h-fit max-h-fit w-fit rounded-xl   p-1 hover:scale-110 hover:shadow-lg hover:shadow-pink2 rotate-[-6deg]">
-                <h3 className="font-bold text-xl">Full-Stack Integration</h3>
-                    <p>
+                <h3 className="font-bold text-xl text-black">Full-Stack Integration</h3>
+                    <p className="text-[#023246]">
                     <span className="font-bold">Delivering End-to-End Solutions:</span> I integrate front-end and back-end technologies to ensure smooth and secure communication, delivering comprehensive solutions.
                     </p>
                 </div>
