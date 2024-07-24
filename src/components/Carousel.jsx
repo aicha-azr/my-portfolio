@@ -49,7 +49,8 @@ export function CarouselCustomNavigation() {
                     <div className={displayedIndex === index ? 'block absolute h-fit min-h-full z-20 p-1 py-0 bg-beige text-blueGreen text-start rounded-xl flex flex-col justify-center bg-opacity-90' : 'hidden'} data-aos="fade-up">
                     <h3 className={displayedIndex === index ?'text-black font-medium md:text-xl bg-brightness-50':'hidden'} >{item.title}</h3>
                         <p className="text-[#023246]">{item.description}</p>
-                        <Link href={item.link} color="#023246" size={30} className="bg-pink rounded-full p-1 mx-2 absolute top-1 right-1"/>
+                        <a href={item.link} className="absolute top-1 right-1">
+                        <Link  color="#023246" size={30} className="bg-pink rounded-full p-1 mx-2 "/></a>
                         
                     </div>
                 </div>
