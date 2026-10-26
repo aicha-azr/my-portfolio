@@ -1,21 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Home from './components/Home';
-import SideBar from './components/SideBar';
-import About from './components/About';
-import Projects from './components/Projects';
-import Page from './page';
-function App() {
+import { Suspense, lazy } from 'react';
+import Layout from './components/layout/Layout';
 
-  return (
-    <> 
-<Page/>
- 
-    </>
-  )
+// Loaded only on /admin so visitors never download the admin code
+const Admin = lazy(() => import('./admin/Admin'));
+
+function App() {
+  if (window.location.pathname.startsWith('/admin')) {
+    return (
+      <Suspense fallback={<div className="min-h-screen bg-night" />}>
+        <Admin />
+      </Suspense>
+    );
+  }
+
+  return <Layout />;
 }
 
-export default App
+export default App;
